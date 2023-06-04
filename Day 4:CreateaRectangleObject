@@ -1,0 +1,43 @@
+/*
+A class can be made like a function
+The function a() here can be used to make objects or to say it returns objects if created correctly
+for example :
+  const z = a(x,y);
+  z======> becomes whatever is returned from the function 
+  but if 
+*/
+
+function a(x,y){
+  /* CREATING OBJECT HERE   */
+  const obj  = {
+    property1 : something;
+    property2 : somevalue(); // property2 gets whatever is returned from somevalue();
+  }
+}
+/ We can use the object reacted like this/
+const obj = a(x,y);
+console.log(obj.property1); this gives the value of property1
+
+///////////////////////////////////////////// THe solution ////////////////////////////////////////////////
+function Rectangle(a, b) {
+    const rec = {
+        length:a,
+        width:b,
+        perimeter:(2*a+2*b),
+        area:a*b
+        };
+    return rec;
+}
+
+
+function main() {
+    const a = +(readLine());
+    const b = +(readLine());
+    
+    const rec = new Rectangle(a, b);
+    
+    console.log(rec.length);
+    console.log(rec.width);
+    console.log(rec.perimeter);
+    console.log(rec.area);
+}
