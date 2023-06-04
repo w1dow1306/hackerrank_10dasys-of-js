@@ -1,0 +1,25 @@
+function getLetter(s) {
+    const arr1 = ['a','e','i','o','u']
+    const arr2 = ['b','c','d','f','g']
+    const arr3=['h','j','k','l','m']
+    const arr4 = [ 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' ];
+    const main_array = [arr1,arr2,arr3,arr4];
+    const x = s.charAt(0);
+    let a =0;
+    main_array.forEach((elem,index) =>{if(elem.includes(x)){a=index};});;
+switch((a+1)){
+    case 1:
+    return("A");
+    break;
+    case 2:
+    return("B");
+    break;
+    case 3:
+    return("C");
+    break;
+    case 4:
+    return("D");
+    break;
+    default:
+    break;
+}
